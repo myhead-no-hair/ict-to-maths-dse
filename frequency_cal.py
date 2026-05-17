@@ -1,13 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Frequency Calculator v1.0.1
+(https://github.com/myhead-no-hair/ict-to-maths-dse/blob/main/frequency_cal.py)
+Author: My Head No Hair (https://github.com/myhead-no-hair)
+Free for any educational use, while it is important to fulfil the academic integrity. 
+
+Function:
+To calculate the wavelength and frequency of a specific harmonic.
+
+This Program has no data type validation.
+'''
+
 import math
 
-string_length = float(input("Length of the string: ")) # unit:meter
-have_speed = bool(int(input("Have wave speed? (1:Yes,0:No) : ")))
+string_length = float(input("Length of the string: ")) # unit: meter
+have_speed = bool(int(input("Have wave speed? (1:Yes, 0:No) : ")))
 
 if have_speed:
     wave_speed = float(input("Wave speed: "))
 else:
-    tension = float(input("Tension of the string: ")) # unit:Newton
-    mass = float(input("Mass of the string: ")) # unit:kilogram
+    tension = float(input("Tension of the string: ")) # unit: Newton
+    mass = float(input("Mass of the string: ")) # unit: kilogram
     wave_speed = math.sqrt(tension*string_length/mass)
     # string_length/mass = tension/(wave_speed^(2))
     print("Wave speed (round off to 3 sig. fig. if need): ",round(wave_speed,3))
@@ -22,7 +36,7 @@ else:
     wave_length = string_length*4 /(term_harmonic*2-1)
     # string_length = wave_length * (term_harmonic*2-1) /4
 
-frequency = wave_speed/ wave_length # unit:Hz or 1/second
+frequency = wave_speed/ wave_length # unit: Hz or (1/second)
 # wave_speed = frequency*wave_length 
 
 print("Wavelength of this harmonic: ",round(wave_length,3))
