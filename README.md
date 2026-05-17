@@ -1,4 +1,5 @@
 # ict-to-maths-dse
-I don't like Maths, so I write some ICT stuffs to solve it.
+Maths causes many problematic problems, so I write some ICT stuffs to solve them.
 <p></p>
-Reference : https://webcal.freetzi.com/casio.fx-50FH/fx-50F_Plus.htm
+Reference : <br>
+https://webcal.freetzi.com/casio.fx-50FH/fx-50F_Plus.htm
